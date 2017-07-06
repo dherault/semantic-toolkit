@@ -1,12 +1,17 @@
 # Changelog
 
+## 0.2.1
+
+**Miscellaneous:**
+- Updated dependencies and added lockfile.
+
 ## 0.2.0
 
 **Breaking changes:**
-- renamed `extendIri` to `extend` and `compactIri` to `compact`
+- renamed `extendIri` to `extend` and `compactIri` to `compact`.
 
 **New features:**
-- Added `registerPrefixes`
+- Added `registerPrefixes`.
 
 ## 0.1.0
 
