@@ -6,21 +6,18 @@
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha $npm_package_options_mocha",
-    "coverage": "./node_modules/.bin/istanbul cover _mocha -- $npm_package_options_mocha",
+    "test": "./node_modules/.bin/mocha --bail --check-leaks",
+    "coverage": "./node_modules/.bin/istanbul cover _mocha -- --bail --check-leaks",
     "coverage:serve": "cd coverage/lcov-report && python -m SimpleHTTPServer",
     "coverage:all": "npm run coverage && npm run coverage:serve"
   },
-  "options": {
-    "mocha": "--bail --check-leaks"
-  },
-  "homepage": "https://github.com/nelson-ai/semantic-toolkit#readme",
+  "homepage": "https://github.com/dherault/semantic-toolkit#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nelson-ai/semantic-toolkit.git"
+    "url": "git+https://github.com/dherault/semantic-toolkit.git"
   },
   "bugs": {
-    "url": "https://github.com/nelson-ai/semantic-toolkit/issues"
+    "url": "https://github.com/dherault/semantic-toolkit/issues"
   },
   "keywords": [
     "semantic",
@@ -32,12 +29,12 @@
     "node": ">=6.9.1"
   },
   "devDependencies": {
-    "chai": "^4.0.2",
-    "coveralls": "^2.13.1",
-    "eslint": "^4.1.1",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
     "eslint-config-nelson": "^0.2.0",
-    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-import": "^2.16.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.4.2"
+    "mocha": "^6.0.2"
   }
 }

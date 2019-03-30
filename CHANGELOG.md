@@ -1,5 +1,10 @@
 # Changelog
 
+## next
+
+**Miscellaneous:**
+- Updated dependencies.
+
 ## 0.2.1
 
 **Miscellaneous:**
